@@ -31,7 +31,7 @@ CanvasRenderingContext2D.prototype.fillTextBitmap = function(text, x, y){
   var letterlist=this.bmfont.letterlist;
   var fontsheet=this.bmfont.fontsheet;
   for(i=0;i<text.length;i++){
-    if(text[i]=='\n'){
+    if(text[i]=='¥n'){
       py=py+this.bmfont.maxheight;
       px=x;
     }else{
@@ -62,7 +62,7 @@ CanvasRenderingContext2D.prototype.measureTextBitmap = function(text){
   var sizelist=this.bmfont.sizelist;
   var letterlist=this.bmfont.letterlist;
   for(i=0;i<text.length;i++){
-    if(text[i]=='\n'){
+    if(text[i]=='¥n'){
       py=py+this.bmfont.maxheight;
       px=0;
     }else{
